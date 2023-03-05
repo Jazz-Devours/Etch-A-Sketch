@@ -12,7 +12,10 @@ button.addEventListener('click', () => {
 })
 
 function changeColor(e) {
-  e.target.classList.add('highlight');
+  let r = Math.random()*255;
+  let g = Math.random()*255;
+  let b = Math.random()*255;
+  e.target.setAttribute('style', `background-color: rgb(${r}, ${g}, ${b})`);
 }
 
 function removeGrid() {

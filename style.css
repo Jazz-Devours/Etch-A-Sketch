@@ -12,8 +12,9 @@ p, h1 {
 
 #container {
   display: flex;
-  height: 960px;
-  width: 960px;
+  margin: auto;
+  height: 800px;
+  width: 800px;
 }
 
 .btn {
@@ -34,7 +35,7 @@ p, h1 {
 .boxY {
   display: flex;
   flex: 1;
-  background-color: lightblue;
+  background-color: rgb(255, 255, 255);
 }
 
 .highlight {
