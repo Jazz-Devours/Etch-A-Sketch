@@ -12,9 +12,12 @@ button.addEventListener('click', () => {
 })
 
 function changeColor(e) {
-  let r = Math.random()*255;
-  let g = Math.random()*255;
-  let b = Math.random()*255;
+  if (e.target.style.backgroundColor) {
+    return;
+  }
+  let r = Math.floor(Math.random()*256);
+  let g = Math.floor(Math.random()*256);
+  let b = Math.floor(Math.random()*256);
   e.target.setAttribute('style', `background-color: rgb(${r}, ${g}, ${b})`);
 }
 
