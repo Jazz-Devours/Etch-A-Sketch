@@ -6,6 +6,12 @@
   border-width: 0.1px;
 }
 
+p, h1 {
+  margin: 5px;
+  color: beige;
+  font-family: cursive;
+}
+
 #container {
   display: flex;
   height: 960px;
